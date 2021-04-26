@@ -5,8 +5,8 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+      <met -->a name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
       <title>PH203</title>
       <meta name="keywords" content="">
@@ -17,7 +17,7 @@
       <!-- style css -->
       <link rel="stylesheet" href="css/style.css">
       <!-- Responsive-->
-      <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+      <link rel="stylesheet" href="css/responsive.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- fevicon -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
@@ -36,6 +36,7 @@
          a{
             cursor: pointer!important ;
          }
+   
       
       </style>
    </head>
@@ -88,43 +89,43 @@
       
                <!-- Suction chamber -->
 
-                  <div class="container">
+                  <div style="min-height: 300px" >
                      <form class="main-form" >
                         <h2 style="background-color:transparent;" class="text-white text-center m-2"><strong>Suction Chamber</strong></h2>
                         <div class="row dialogS">
-                           <div class="col-12 col-md-8">
+                           <div class="col-8">
                               <div class="row">
                                  <div class="col-12 row">
                                     <label class="col-4">Rotational Speed: </label>
-                                    <input class="form-control col-8" placeholder="" type="number" >                                    
+                                    <input class="form-control col-6" placeholder="" type="number" >                                    
                                  </div>
                                  <div class="col-12 row">
                                     <label class="col-4" >Input Pressure (in Pa):</label>
-                                    <input class="form-control col-8" placeholder="" type="number" >
+                                    <input class="form-control col-6" placeholder="" type="number" >
                                  </div>
                                  <div class="col-12 row">
                                     <label class="col-4" >Output Pressure (in Pa):</label>
-                                    <input class="form-control col-8" placeholder="" type="number" >
+                                    <input class="form-control col-6" placeholder="" type="number" >
                                  </div>
 
                                  <div class="row col-12">
                                     <label class="col-4" >Dead Space Volume (in m<sup>3</sup>):</label>
-                                    <input class="form-control col-8" placeholder="" type="number" >
+                                    <input class="form-control col-6" placeholder="" type="number" >
                                  </div>
 
                                  <div class="row col-12">
                                     <label class="col-4"  >Suction Chamber Volume <br>(in m<sup>3</sup>):</label>
-                                    <input class="form-control col-8" placeholder="" type="number" >
+                                    <input class="form-control col-6" placeholder="" type="number" >
                                  </div>
-                                  <div class="col-12 col-md-6">
+                                  <div class="col-6">
                                        <a onclick="suction_chamber()">Calculate</a>
                                  </div>
-                                 <div class="col-12 col-md-6">
+                                 <div class="col-6">
                                        <a onclick="clear_input()">Clear Input</a>
                                  </div>
                               </div>
                            </div>
-                          <div class="col-12 col-md-4" style="vertical-align: middle">
+                          <div class="col-4" style="vertical-align: middle">
                               <div style="font-size: 26px;font-weight: bold;">
                                  <br><br>
                                  <label>Throughput :<span class="g1" style=" font-size: 16px;">NA</span></label>
@@ -149,37 +150,37 @@
                                     <form class="main-form">
                                        <h2 style="background-color:transparent;" class="text-white text-center m-2"><strong>Gas Equation</strong> </h2>
                                        <div class="row dialogG">
-                                          <div class="col-12 col-md-8">
+                                          <div class="col-8">
                                              <div class="row">
                                                 <div class="col-12 row">
                                                    <label class ="col-4" >Moles Of Gas</label>
-                                                   <input class="form-control col-8" placeholder="" type="number" >
+                                                   <input class="form-control col-6" placeholder="" type="number" >
                                                 </div>
                
                                                 <div class="col-12 row">
                                                    <label  class="col-4"  >Pressure (in Pa)</label>
-                                                   <input class="form-control col-8" placeholder="" type="number" >
+                                                   <input class="form-control col-6" placeholder="" type="number" >
                                                 </div>
                                                 <div class="col-12 row">
                                                    <label  class="col-4"  >Temperature (in K)</label>
-                                                   <input class="form-control col-8" placeholder="" type="number" >
+                                                   <input class="form-control col-6" placeholder="" type="number" >
                                                 </div>
                
                                                 <div class="col-12 row">
                                                    <label  class="col-4"  >Time (s)</label>
-                                                   <input class="form-control col-8" placeholder="" type="number" >
+                                                   <input class="form-control col-6" placeholder="" type="number" >
                                                 </div>
-                                                <div class="col-12 col-md-6">
+                                                <div class="col-6">
                                                    <a onclick="gas_equation()">Calculate</a>
                                                 </div>
-                                                <div class="col-12 col-md-6">
+                                                <div class="col-6">
                                                    <a onclick="clear_input()">Clear Input</a>
                                                 </div>
                                              </div>
                                           </div>
                                           
                
-                                          <div class="col-12 col-md-4"  style="vertical-align: middle">
+                                          <div class="col-4"  style="vertical-align: middle">
                                              <div style="font-size: 26px;font-weight: bold;">
                                                 <br>
                                                 <div>Throughput :<span class="g1" style="font-size: 16px;" >NA</span></div>
